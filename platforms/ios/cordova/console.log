@@ -125,3 +125,534 @@ To disable web storage backup to iCloud, set the BackupWebStorage preference to 
 
 2015-03-31 13:53:24.597 Giftr[13973:303143] Resetting plugins due to page load.
 2015-03-31 13:53:24.621 Giftr[13973:303143] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/E7AB0E06-5C38-4068-89A3-95CA4B15CFAE/Giftr.app/www/index.html
+2015-04-01 10:03:02.410 Giftr[692:20379] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/C6B1D687-34AA-416C-8C13-0C77897CC2B3/Library/Cookies/Cookies.binarycookies
+2015-04-01 10:03:02.669 Giftr[692:20379] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-01 10:03:02.670 Giftr[692:20379] Multi-tasking -> Device: YES, App: YES
+2015-04-01 10:03:02.691 Giftr[692:20379] Unlimited access to network resources
+2015-04-01 10:03:02.701 Giftr[692:20379] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-01 10:03:03.191 Giftr[692:20379] Resetting plugins due to page load.
+2015-04-01 10:03:03.312 Giftr[692:20379] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/6B072925-56D8-46B7-BF55-CB750B6C91F8/Giftr.app/www/index.html
+2015-04-01 10:04:13.774 Giftr[793:21409] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/10A0EDC7-85E9-453C-AD96-8916CC30D51E/Library/Cookies/Cookies.binarycookies
+2015-04-01 10:04:13.819 Giftr[793:21409] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-01 10:04:13.819 Giftr[793:21409] Multi-tasking -> Device: YES, App: YES
+2015-04-01 10:04:13.820 Giftr[793:21409] Unlimited access to network resources
+2015-04-01 10:04:13.822 Giftr[793:21409] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-01 10:04:13.923 Giftr[793:21409] Resetting plugins due to page load.
+2015-04-01 10:04:13.955 Giftr[793:21409] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/B4BEE90E-1700-47A8-8D7E-1D5AB43EA977/Giftr.app/www/index.html
+2015-04-01 10:12:47.847 Giftr[793:23127] Terminating since there is no system app.
+2015-04-01 14:59:27.162 Giftr[1788:58609] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/0D22928D-2CDD-47C4-99C6-733F6D202111/Library/Cookies/Cookies.binarycookies
+2015-04-01 14:59:27.209 Giftr[1788:58609] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-01 14:59:27.209 Giftr[1788:58609] Multi-tasking -> Device: YES, App: YES
+2015-04-01 14:59:27.212 Giftr[1788:58609] Unlimited access to network resources
+2015-04-01 14:59:27.214 Giftr[1788:58609] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-01 14:59:27.560 Giftr[1788:58609] Resetting plugins due to page load.
+2015-04-01 14:59:27.613 Giftr[1788:58609] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/4EECFE15-5168-4CA9-9987-5C3AA4C33C37/Giftr.app/www/index.html
+2015-04-01 15:21:30.730 Giftr[2003:64160] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/7E6B2CB1-5D05-49C8-AAA8-CEC2ED615790/Library/Cookies/Cookies.binarycookies
+2015-04-01 15:21:30.774 Giftr[2003:64160] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-01 15:21:30.774 Giftr[2003:64160] Multi-tasking -> Device: YES, App: YES
+2015-04-01 15:21:30.776 Giftr[2003:64160] Unlimited access to network resources
+2015-04-01 15:21:30.777 Giftr[2003:64160] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-01 15:21:30.878 Giftr[2003:64160] Resetting plugins due to page load.
+2015-04-01 15:21:30.905 Giftr[2003:64160] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/AB2C9E98-D726-4349-82AA-3A2BB21C38F5/Giftr.app/www/index.html
+2015-04-01 15:26:41.729 Giftr[2277:67238] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/DA2E472E-F484-4F66-AE3B-F20DC9F2B97C/Library/Cookies/Cookies.binarycookies
+2015-04-01 15:26:41.780 Giftr[2277:67238] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-01 15:26:41.780 Giftr[2277:67238] Multi-tasking -> Device: YES, App: YES
+2015-04-01 15:26:41.781 Giftr[2277:67238] Unlimited access to network resources
+2015-04-01 15:26:41.783 Giftr[2277:67238] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-01 15:26:41.882 Giftr[2277:67238] Resetting plugins due to page load.
+2015-04-01 15:26:41.919 Giftr[2277:67238] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/66E1191F-640B-482C-8C1A-3DD3C36A542E/Giftr.app/www/index.html
+2015-04-01 15:28:58.492 Giftr[2396:68619] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/BABA2178-D004-4A1C-807F-2DEC6EB8AA61/Library/Cookies/Cookies.binarycookies
+2015-04-01 15:28:58.540 Giftr[2396:68619] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-01 15:28:58.540 Giftr[2396:68619] Multi-tasking -> Device: YES, App: YES
+2015-04-01 15:28:58.541 Giftr[2396:68619] Unlimited access to network resources
+2015-04-01 15:28:58.543 Giftr[2396:68619] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-01 15:28:58.644 Giftr[2396:68619] Resetting plugins due to page load.
+2015-04-01 15:28:58.675 Giftr[2396:68619] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/A915FAFE-AD69-41BB-BF66-3CD3C2F2E6FB/Giftr.app/www/index.html
+2015-04-04 07:27:33.635 Giftr[1561:100794] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/015ABA32-F463-4289-AE06-2030583B1294/Library/Cookies/Cookies.binarycookies
+2015-04-04 07:27:33.901 Giftr[1561:100794] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-04 07:27:33.901 Giftr[1561:100794] Multi-tasking -> Device: YES, App: YES
+2015-04-04 07:27:33.912 Giftr[1561:100794] Unlimited access to network resources
+2015-04-04 07:27:33.922 Giftr[1561:100794] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-04 07:27:34.442 Giftr[1561:100794] Resetting plugins due to page load.
+2015-04-04 07:27:34.534 Giftr[1561:100794] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/51419BEA-CFBE-499E-8B0D-B0853AF0B4C9/Giftr.app/www/index.html
+2015-04-04 07:59:30.329 Giftr[2363:109448] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/BEAD1C00-F4AF-42FF-8E56-780EBDDB0098/Library/Cookies/Cookies.binarycookies
+2015-04-04 07:59:30.375 Giftr[2363:109448] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-04 07:59:30.375 Giftr[2363:109448] Multi-tasking -> Device: YES, App: YES
+2015-04-04 07:59:30.376 Giftr[2363:109448] Unlimited access to network resources
+2015-04-04 07:59:30.378 Giftr[2363:109448] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-04 07:59:30.478 Giftr[2363:109448] Resetting plugins due to page load.
+2015-04-04 07:59:30.503 Giftr[2363:109448] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/27BEEF14-C13C-426C-8EA2-9C9EB3764727/Giftr.app/www/index.html
+2015-04-04 07:59:57.612 Giftr[2363:109632] Terminating since there is no system app.
+2015-04-05 20:03:09.658 Giftr[8972:361761] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/A07B44E6-EC5D-44DC-BC15-4ADC6A6497F5/Library/Cookies/Cookies.binarycookies
+2015-04-05 20:03:09.712 Giftr[8972:361761] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-05 20:03:09.712 Giftr[8972:361761] Multi-tasking -> Device: YES, App: YES
+2015-04-05 20:03:09.713 Giftr[8972:361761] Unlimited access to network resources
+2015-04-05 20:03:09.715 Giftr[8972:361761] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-05 20:03:09.820 Giftr[8972:361761] Resetting plugins due to page load.
+2015-04-05 20:03:09.849 Giftr[8972:361761] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/34A74446-F62C-45F5-84AF-C3D642FCC0A0/Giftr.app/www/index.html
+2015-04-05 20:05:23.328 Giftr[9096:363154] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/1C983996-F505-4616-9562-232A8856735F/Library/Cookies/Cookies.binarycookies
+2015-04-05 20:05:23.375 Giftr[9096:363154] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-05 20:05:23.376 Giftr[9096:363154] Multi-tasking -> Device: YES, App: YES
+2015-04-05 20:05:23.377 Giftr[9096:363154] Unlimited access to network resources
+2015-04-05 20:05:23.379 Giftr[9096:363154] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-05 20:05:23.485 Giftr[9096:363154] Resetting plugins due to page load.
+2015-04-05 20:05:23.512 Giftr[9096:363154] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/88EECD51-98A7-4F1F-B7A0-B841550D6FA3/Giftr.app/www/index.html
+2015-04-05 20:14:14.695 Giftr[9322:366130] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/3FA2966D-BCE1-4096-8849-1308D9564168/Library/Cookies/Cookies.binarycookies
+2015-04-05 20:14:14.741 Giftr[9322:366130] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-05 20:14:14.741 Giftr[9322:366130] Multi-tasking -> Device: YES, App: YES
+2015-04-05 20:14:14.742 Giftr[9322:366130] Unlimited access to network resources
+2015-04-05 20:14:14.744 Giftr[9322:366130] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-05 20:14:14.846 Giftr[9322:366130] Resetting plugins due to page load.
+2015-04-05 20:14:14.879 Giftr[9322:366130] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/A10B2D1D-79F4-4B4E-92F5-2ED57E6C8AED/Giftr.app/www/index.html
+2015-04-06 18:42:23.528 Giftr[9972:386791] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/5C49A163-2CFA-4C14-951F-DC3AADD59856/Library/Cookies/Cookies.binarycookies
+2015-04-06 18:42:23.578 Giftr[9972:386791] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 18:42:23.578 Giftr[9972:386791] Multi-tasking -> Device: YES, App: YES
+2015-04-06 18:42:23.579 Giftr[9972:386791] Unlimited access to network resources
+2015-04-06 18:42:23.582 Giftr[9972:386791] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 18:42:23.692 Giftr[9972:386791] Resetting plugins due to page load.
+2015-04-06 18:42:23.720 Giftr[9972:386791] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/EC53C129-C8B7-4518-9C86-12F58196C64F/Giftr.app/www/index.html
+2015-04-06 18:46:13.690 Giftr[10114:388691] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/BB51F81A-5F74-44AE-A75B-FBFED84CBB46/Library/Cookies/Cookies.binarycookies
+2015-04-06 18:46:13.737 Giftr[10114:388691] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 18:46:13.737 Giftr[10114:388691] Multi-tasking -> Device: YES, App: YES
+2015-04-06 18:46:13.738 Giftr[10114:388691] Unlimited access to network resources
+2015-04-06 18:46:13.739 Giftr[10114:388691] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 18:46:13.841 Giftr[10114:388691] Resetting plugins due to page load.
+2015-04-06 18:46:13.868 Giftr[10114:388691] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/21B0490D-AC53-4189-8214-3F488D2645D9/Giftr.app/www/index.html
+2015-04-06 18:58:40.506 Giftr[10339:392566] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/E6117A5D-B35B-40F3-8DE5-8531BB192BAF/Library/Cookies/Cookies.binarycookies
+2015-04-06 18:58:40.556 Giftr[10339:392566] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 18:58:40.557 Giftr[10339:392566] Multi-tasking -> Device: YES, App: YES
+2015-04-06 18:58:40.558 Giftr[10339:392566] Unlimited access to network resources
+2015-04-06 18:58:40.561 Giftr[10339:392566] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 18:58:40.684 Giftr[10339:392566] Resetting plugins due to page load.
+2015-04-06 18:58:40.714 Giftr[10339:392566] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/43B37B6F-E722-4436-8849-5E576A36DFE5/Giftr.app/www/index.html
+2015-04-06 19:01:23.814 Giftr[10458:393846] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/49693BD5-B092-47CA-A931-1EF428231C56/Library/Cookies/Cookies.binarycookies
+2015-04-06 19:01:23.859 Giftr[10458:393846] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 19:01:23.859 Giftr[10458:393846] Multi-tasking -> Device: YES, App: YES
+2015-04-06 19:01:23.861 Giftr[10458:393846] Unlimited access to network resources
+2015-04-06 19:01:23.863 Giftr[10458:393846] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 19:01:23.967 Giftr[10458:393846] Resetting plugins due to page load.
+2015-04-06 19:01:35.300 Giftr[10458:393846] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/B72DBFCB-4DE0-4255-8395-2E63CD723E03/Giftr.app/www/index.html
+2015-04-06 19:02:23.510 Giftr[10458:394315] Terminating since there is no system app.
+2015-04-06 19:02:31.290 Giftr[10573:394976] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/B6CDCFDC-EDAD-44CD-8DA8-1283E914B8AA/Library/Cookies/Cookies.binarycookies
+2015-04-06 19:02:31.334 Giftr[10573:394976] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 19:02:31.334 Giftr[10573:394976] Multi-tasking -> Device: YES, App: YES
+2015-04-06 19:02:31.335 Giftr[10573:394976] Unlimited access to network resources
+2015-04-06 19:02:31.337 Giftr[10573:394976] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 19:02:31.439 Giftr[10573:394976] Resetting plugins due to page load.
+2015-04-06 19:02:36.421 Giftr[10573:394976] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/6640FABB-F9A8-4A20-AECB-629974465E50/Giftr.app/www/index.html
+2015-04-06 19:03:04.303 Giftr[10573:395228] Terminating since there is no system app.
+2015-04-06 19:03:11.440 Giftr[10679:395891] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/53DC42BE-9B3C-4FAE-9788-EE27BC6B6629/Library/Cookies/Cookies.binarycookies
+2015-04-06 19:03:11.485 Giftr[10679:395891] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 19:03:11.486 Giftr[10679:395891] Multi-tasking -> Device: YES, App: YES
+2015-04-06 19:03:11.487 Giftr[10679:395891] Unlimited access to network resources
+2015-04-06 19:03:11.488 Giftr[10679:395891] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 19:03:11.595 Giftr[10679:395891] Resetting plugins due to page load.
+2015-04-06 19:03:18.392 Giftr[10679:395891] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/A07DE454-969C-4F7C-B6D8-937C6C6467C5/Giftr.app/www/index.html
+2015-04-06 19:46:41.870 Giftr[10679:404750] Terminating since there is no system app.
+2015-04-06 19:46:50.499 Giftr[11134:405437] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/1B0E4FBC-2532-481F-8EA0-65453F70C4A4/Library/Cookies/Cookies.binarycookies
+2015-04-06 19:46:50.546 Giftr[11134:405437] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 19:46:50.546 Giftr[11134:405437] Multi-tasking -> Device: YES, App: YES
+2015-04-06 19:46:50.548 Giftr[11134:405437] Unlimited access to network resources
+2015-04-06 19:46:50.549 Giftr[11134:405437] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 19:46:50.653 Giftr[11134:405437] Resetting plugins due to page load.
+2015-04-06 19:46:55.441 Giftr[11134:405437] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/B4437DD3-310B-45BB-BDEB-67DDF0A6D9B8/Giftr.app/www/index.html
+2015-04-06 19:49:40.640 Giftr[11264:407001] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/53B2FCF7-55EC-494C-AD3C-1996FA69997A/Library/Cookies/Cookies.binarycookies
+2015-04-06 19:49:40.690 Giftr[11264:407001] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 19:49:40.690 Giftr[11264:407001] Multi-tasking -> Device: YES, App: YES
+2015-04-06 19:49:40.692 Giftr[11264:407001] Unlimited access to network resources
+2015-04-06 19:49:40.693 Giftr[11264:407001] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 19:49:40.795 Giftr[11264:407001] Resetting plugins due to page load.
+2015-04-06 19:49:49.806 Giftr[11264:407001] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/FBEEC80B-8C13-4311-86AE-77E94A89BCA5/Giftr.app/www/index.html
+2015-04-06 19:52:23.078 Giftr[11384:408335] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/2B3A9D56-E19B-4ACA-A42F-3F8191125CC0/Library/Cookies/Cookies.binarycookies
+2015-04-06 19:52:23.127 Giftr[11384:408335] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 19:52:23.128 Giftr[11384:408335] Multi-tasking -> Device: YES, App: YES
+2015-04-06 19:52:23.129 Giftr[11384:408335] Unlimited access to network resources
+2015-04-06 19:52:23.130 Giftr[11384:408335] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 19:52:23.233 Giftr[11384:408335] Resetting plugins due to page load.
+2015-04-06 19:52:30.498 Giftr[11384:408335] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/1B01E917-7663-4630-A312-6BCA38634E89/Giftr.app/www/index.html
+2015-04-06 19:57:10.622 Giftr[11513:409946] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/5C25DDAB-95B0-46E2-BC0F-4A86528BE5F4/Library/Cookies/Cookies.binarycookies
+2015-04-06 19:57:10.667 Giftr[11513:409946] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 19:57:10.667 Giftr[11513:409946] Multi-tasking -> Device: YES, App: YES
+2015-04-06 19:57:10.668 Giftr[11513:409946] Unlimited access to network resources
+2015-04-06 19:57:10.670 Giftr[11513:409946] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 19:57:10.772 Giftr[11513:409946] Resetting plugins due to page load.
+2015-04-06 19:57:16.595 Giftr[11513:409946] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/5953D506-D130-44C3-B4A4-0EEF3E20DAB0/Giftr.app/www/index.html
+2015-04-06 19:57:46.644 Giftr[11513:410170] Terminating since there is no system app.
+2015-04-06 19:59:00.513 Giftr[11628:411166] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/72B394FB-D76C-438C-87F9-999024ADE737/Library/Cookies/Cookies.binarycookies
+2015-04-06 19:59:00.556 Giftr[11628:411166] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 19:59:00.556 Giftr[11628:411166] Multi-tasking -> Device: YES, App: YES
+2015-04-06 19:59:00.558 Giftr[11628:411166] Unlimited access to network resources
+2015-04-06 19:59:00.559 Giftr[11628:411166] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 19:59:00.661 Giftr[11628:411166] Resetting plugins due to page load.
+2015-04-06 19:59:05.410 Giftr[11628:411166] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/4445A575-8B36-4FA4-8EEA-B2383E1EA0AD/Giftr.app/www/index.html
+2015-04-06 20:00:02.117 Giftr[11736:412121] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/E5FE5338-5766-4570-A98E-51B816707208/Library/Cookies/Cookies.binarycookies
+2015-04-06 20:00:02.165 Giftr[11736:412121] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 20:00:02.165 Giftr[11736:412121] Multi-tasking -> Device: YES, App: YES
+2015-04-06 20:00:02.167 Giftr[11736:412121] Unlimited access to network resources
+2015-04-06 20:00:02.168 Giftr[11736:412121] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 20:00:02.273 Giftr[11736:412121] Resetting plugins due to page load.
+2015-04-06 20:00:07.245 Giftr[11736:412121] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/A56D3E4E-3C58-4C35-88F7-9ABD320AC87F/Giftr.app/www/index.html
+2015-04-06 20:04:51.262 Giftr[11892:414102] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/805B66DD-7D8A-458A-93E0-768CC0C24ACF/Library/Cookies/Cookies.binarycookies
+2015-04-06 20:04:51.308 Giftr[11892:414102] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 20:04:51.308 Giftr[11892:414102] Multi-tasking -> Device: YES, App: YES
+2015-04-06 20:04:51.310 Giftr[11892:414102] Unlimited access to network resources
+2015-04-06 20:04:51.311 Giftr[11892:414102] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 20:04:51.413 Giftr[11892:414102] Resetting plugins due to page load.
+2015-04-06 20:04:56.705 Giftr[11892:414102] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/FF4BF24B-CF4E-4D3B-983D-84237BC63993/Giftr.app/www/index.html
+2015-04-06 20:07:04.636 Giftr[12011:415443] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/3DC373D1-6430-4A6B-AA7C-955E3894F3AD/Library/Cookies/Cookies.binarycookies
+2015-04-06 20:07:04.686 Giftr[12011:415443] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 20:07:04.686 Giftr[12011:415443] Multi-tasking -> Device: YES, App: YES
+2015-04-06 20:07:04.687 Giftr[12011:415443] Unlimited access to network resources
+2015-04-06 20:07:04.689 Giftr[12011:415443] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 20:07:04.794 Giftr[12011:415443] Resetting plugins due to page load.
+2015-04-06 20:07:10.924 Giftr[12011:415443] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/CDC5A01A-1162-4FEB-BD53-37D1A387EF9D/Giftr.app/www/index.html
+2015-04-06 20:14:23.217 Giftr[12182:417984] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/8C7AA7B0-8108-4DCE-A1EC-E24E85164CF3/Library/Cookies/Cookies.binarycookies
+2015-04-06 20:14:23.264 Giftr[12182:417984] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 20:14:23.265 Giftr[12182:417984] Multi-tasking -> Device: YES, App: YES
+2015-04-06 20:14:23.266 Giftr[12182:417984] Unlimited access to network resources
+2015-04-06 20:14:23.267 Giftr[12182:417984] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 20:14:23.376 Giftr[12182:417984] Resetting plugins due to page load.
+2015-04-06 20:14:28.247 Giftr[12182:417984] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/F099A577-751B-4F55-BE20-4F512066F790/Giftr.app/www/index.html
+2015-04-06 20:20:00.546 Giftr[12314:419575] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/1CA86AFE-54C9-410B-A9C1-166B2266FF1A/Library/Cookies/Cookies.binarycookies
+2015-04-06 20:20:00.598 Giftr[12314:419575] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 20:20:00.598 Giftr[12314:419575] Multi-tasking -> Device: YES, App: YES
+2015-04-06 20:20:00.599 Giftr[12314:419575] Unlimited access to network resources
+2015-04-06 20:20:00.601 Giftr[12314:419575] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 20:20:00.708 Giftr[12314:419575] Resetting plugins due to page load.
+2015-04-06 20:20:05.548 Giftr[12314:419575] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/74A73013-CEFA-445D-9969-70B1506D7528/Giftr.app/www/index.html
+2015-04-06 20:22:39.288 Giftr[12314:420328] Terminating since there is no system app.
+2015-04-06 20:22:47.688 Giftr[12442:421011] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/4EFCF7AB-0077-4683-BEDC-F8990E73BDE1/Library/Cookies/Cookies.binarycookies
+2015-04-06 20:22:47.739 Giftr[12442:421011] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 20:22:47.739 Giftr[12442:421011] Multi-tasking -> Device: YES, App: YES
+2015-04-06 20:22:47.740 Giftr[12442:421011] Unlimited access to network resources
+2015-04-06 20:22:47.742 Giftr[12442:421011] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 20:22:47.841 Giftr[12442:421011] Resetting plugins due to page load.
+2015-04-06 20:22:52.564 Giftr[12442:421011] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/DDD36ABF-037C-4CA3-8BB6-675463F29AE4/Giftr.app/www/index.html
+2015-04-06 20:29:48.581 Giftr[12442:423010] Terminating since there is no system app.
+2015-04-06 20:29:55.974 Giftr[12613:423669] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/5F310ED8-C80C-4DA5-9577-9F0E0D82EFC2/Library/Cookies/Cookies.binarycookies
+2015-04-06 20:29:56.024 Giftr[12613:423669] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 20:29:56.025 Giftr[12613:423669] Multi-tasking -> Device: YES, App: YES
+2015-04-06 20:29:56.026 Giftr[12613:423669] Unlimited access to network resources
+2015-04-06 20:29:56.028 Giftr[12613:423669] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 20:29:56.131 Giftr[12613:423669] Resetting plugins due to page load.
+2015-04-06 20:30:01.176 Giftr[12613:423669] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/9CBE2628-C77C-48AE-9736-80615D7C0CDE/Giftr.app/www/index.html
+2015-04-06 20:39:44.331 Giftr[12800:426454] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/84452FDE-86E0-41F1-A175-B681E07F64D8/Library/Cookies/Cookies.binarycookies
+2015-04-06 20:39:44.382 Giftr[12800:426454] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 20:39:44.382 Giftr[12800:426454] Multi-tasking -> Device: YES, App: YES
+2015-04-06 20:39:44.384 Giftr[12800:426454] Unlimited access to network resources
+2015-04-06 20:39:44.385 Giftr[12800:426454] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 20:39:44.486 Giftr[12800:426454] Resetting plugins due to page load.
+2015-04-06 20:39:50.041 Giftr[12800:426454] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/7DD1D80B-0009-4375-81B0-23B570FDB038/Giftr.app/www/index.html
+2015-04-06 22:06:17.069 Giftr[12800:442082] Terminating since there is no system app.
+2015-04-06 22:06:24.429 Giftr[13506:442763] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/AC074592-B045-4214-A4F8-93C5A87D2770/Library/Cookies/Cookies.binarycookies
+2015-04-06 22:06:24.480 Giftr[13506:442763] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 22:06:24.480 Giftr[13506:442763] Multi-tasking -> Device: YES, App: YES
+2015-04-06 22:06:24.481 Giftr[13506:442763] Unlimited access to network resources
+2015-04-06 22:06:24.483 Giftr[13506:442763] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 22:06:24.582 Giftr[13506:442763] Resetting plugins due to page load.
+2015-04-06 22:06:29.509 Giftr[13506:442763] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/2675D57F-D968-4118-AAE8-79BC0B01C946/Giftr.app/www/index.html
+2015-04-06 22:07:30.686 Giftr[13506:443165] Terminating since there is no system app.
+2015-04-06 22:08:26.592 Giftr[13623:444043] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/B6F73A1A-353F-4D9B-A665-52E42D0C18B2/Library/Cookies/Cookies.binarycookies
+2015-04-06 22:08:26.640 Giftr[13623:444043] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 22:08:26.641 Giftr[13623:444043] Multi-tasking -> Device: YES, App: YES
+2015-04-06 22:08:26.642 Giftr[13623:444043] Unlimited access to network resources
+2015-04-06 22:08:26.643 Giftr[13623:444043] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 22:08:26.746 Giftr[13623:444043] Resetting plugins due to page load.
+2015-04-06 22:08:35.397 Giftr[13623:444043] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/792C6670-B420-49D2-BC6A-AEEEE5D625E5/Giftr.app/www/index.html
+2015-04-06 22:08:48.305 Giftr[13623:444231] Terminating since there is no system app.
+2015-04-06 22:44:40.086 Giftr[14297:452543] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/55F5C424-CD3D-4064-A308-63A15189DC7D/Library/Cookies/Cookies.binarycookies
+2015-04-06 22:44:40.137 Giftr[14297:452543] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 22:44:40.138 Giftr[14297:452543] Multi-tasking -> Device: YES, App: YES
+2015-04-06 22:44:40.139 Giftr[14297:452543] Unlimited access to network resources
+2015-04-06 22:44:40.141 Giftr[14297:452543] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 22:44:40.239 Giftr[14297:452543] Resetting plugins due to page load.
+2015-04-06 22:44:46.978 Giftr[14297:452543] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/92F07DC1-5655-45F2-9E03-8690D6C8D4E1/Giftr.app/www/index.html
+2015-04-06 22:46:59.652 Giftr[14297:453342] Terminating since there is no system app.
+2015-04-06 22:47:07.146 Giftr[14423:454032] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/19FD827E-957E-4879-AB96-1A037F4B3066/Library/Cookies/Cookies.binarycookies
+2015-04-06 22:47:07.197 Giftr[14423:454032] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 22:47:07.198 Giftr[14423:454032] Multi-tasking -> Device: YES, App: YES
+2015-04-06 22:47:07.199 Giftr[14423:454032] Unlimited access to network resources
+2015-04-06 22:47:07.201 Giftr[14423:454032] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 22:47:07.303 Giftr[14423:454032] Resetting plugins due to page load.
+2015-04-06 22:47:14.898 Giftr[14423:454032] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/DA9CE0FE-F9A7-4199-9CD7-77DE8DFF6444/Giftr.app/www/index.html
+2015-04-06 22:50:36.646 Giftr[14552:455603] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/FDCA620C-EDC2-45CD-915E-EF8805C9E051/Library/Cookies/Cookies.binarycookies
+2015-04-06 22:50:36.695 Giftr[14552:455603] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-06 22:50:36.695 Giftr[14552:455603] Multi-tasking -> Device: YES, App: YES
+2015-04-06 22:50:36.697 Giftr[14552:455603] Unlimited access to network resources
+2015-04-06 22:50:36.698 Giftr[14552:455603] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-06 22:50:36.799 Giftr[14552:455603] Resetting plugins due to page load.
+2015-04-06 22:50:43.122 Giftr[14552:455603] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/85EB2EFA-372F-407B-832E-81F0BF94B190/Giftr.app/www/index.html
+2015-04-07 09:21:56.330 Giftr[18175:564560] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/7F0D56EB-ACB6-4016-8A7C-DE46A473F678/Library/Cookies/Cookies.binarycookies
+2015-04-07 09:21:56.375 Giftr[18175:564560] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-07 09:21:56.375 Giftr[18175:564560] Multi-tasking -> Device: YES, App: YES
+2015-04-07 09:21:56.376 Giftr[18175:564560] Unlimited access to network resources
+2015-04-07 09:21:56.378 Giftr[18175:564560] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-07 09:21:56.485 Giftr[18175:564560] Resetting plugins due to page load.
+2015-04-07 09:22:03.259 Giftr[18175:564560] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/A959099A-78D6-4C08-AAEC-6E0EF18A014A/Giftr.app/www/index.html
+2015-04-07 09:22:55.289 Giftr[18175:565020] Terminating since there is no system app.
+2015-04-07 09:23:12.859 Giftr[18288:565767] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Data/Application/F104F72A-BF7B-4D6D-9A0F-BB6A22B5BA84/Library/Cookies/Cookies.binarycookies
+2015-04-07 09:23:12.908 Giftr[18288:565767] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-07 09:23:12.908 Giftr[18288:565767] Multi-tasking -> Device: YES, App: YES
+2015-04-07 09:23:12.909 Giftr[18288:565767] Unlimited access to network resources
+2015-04-07 09:23:12.911 Giftr[18288:565767] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-07 09:23:13.013 Giftr[18288:565767] Resetting plugins due to page load.
+2015-04-07 09:23:19.969 Giftr[18288:565767] Finished load of: file:///Users/paulharvey/Library/Developer/CoreSimulator/Devices/E129B796-11DD-4C28-90A4-F4DFE4999550/data/Containers/Bundle/Application/34AC5AF7-2CC1-452F-BDC5-84A0D72614C8/Giftr.app/www/index.html
