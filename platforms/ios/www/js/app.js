@@ -17,7 +17,7 @@ var app= {
 	onDeviceReady: function(){
 		app.loadRequirements++;
 		if(app.loadRequirements === 2){
-			alert("START");
+			//alert("START");
 			app.start();
 		}
 	},
@@ -102,18 +102,18 @@ var app= {
 					function(err){
 						//error in changing version
 						//if the increment fails
-						alert( "Change version call error " + err.message);
+						//alert( "Change version call error " + err.message);
 					},
 					function(){
 						//successfully completed the transaction of incrementing the version number   
 								app.version = '1.0';
-								alert("Change version function worked.");
+								//alert("Change version function worked.");
 					});
 		}else{
 			//version should be 1.0
 			//this won't be the first time running the app
-			alert("DB has previously been created");
-			alert('Version:' + app.version);
+			//alert("DB has previously been created");
+			//alert('Version:' + app.version);
 		}
 	},
 	
@@ -192,7 +192,7 @@ var app= {
 			mc.add([singleTap]);	
 			mc.on('singletap', function(ev) {
 				//ev.preventDefault();
-				alert("YAY CLICKED THE ADD BUTTON");
+				//alert("YAY CLICKED THE ADD BUTTON");
 				document.querySelector("[data-role=overlay]").style.display="block";
 				document.getElementById("add-person").style.display="block";
 				app.newperson();
@@ -276,7 +276,7 @@ var app= {
 			mc.add([singleTap]);	
 			mc.on('singletap', function(ev) {
 				//ev.preventDefault();
-				alert("YAY CLICKED THE ADD BUTTON");
+				//alert("YAY CLICKED THE ADD BUTTON");
 				//app.modal.document.getElementById("add-person");
 				document.getElementById("add-occasion").style.display="block";
 				document.querySelector("[data-role=overlay]").style.display="block";
@@ -314,7 +314,7 @@ var app= {
 				trans.executeSql('INSERT INTO people(person_id, person_name) VALUES(null, ?)', [name], 
 					function(tx, rs){
 						//do something if it works, as desired   
-						alert("Added row in people");
+						//alert("Added row in people");
 						document.getElementById("add-person").style.display="none";
 						document.querySelector("[data-role=overlay]").style.display="none";
 						app.fillPeople();
@@ -347,10 +347,10 @@ var app= {
 		var norecords=false;
 		
 		var item = ev.target.getAttribute("data-ref");
-		alert("ITEM is " + item);
+		//alert("ITEM is " + item);
         
         app.db.transaction(function(trans){
-        trans.executeSql("SELECT g.purchased, g.gift_id, g.gift_idea, o.occ_name FROM gifts AS g INNER JOIN occasions AS o ON o.occ_id = g.occ_id WHERE g.person_id = ? ORDER BY o.occ_name, g.gift_idea)", [item],
+        trans.executeSql("SELECT g.purchased, g.gift_id, g.gift_idea, o.occ_name FROM gifts AS g INNER JOIN occasions AS o ON o.occ_id = g.occ_id WHERE g.person_id = ? ORDER BY o.occ_name, g.gift_idea", [item],
                 function(tx, rs){
                          var len = rs.rows.length;
 
@@ -366,6 +366,7 @@ var app= {
                     console.log("Error: " + err);
 					norecords = true;
                 });
+				
        });
 		if (norecords) {
 			alert ("no records");
@@ -373,7 +374,7 @@ var app= {
 			div3.appendChild(nameul3);	
 		}
 
-			var mchammertime = new Hammer.Manager(nameul2);
+			var mchammertime = new Hammer.Manager(nameul3);
 			
 			var singleTap = new Hammer.Tap({ event: 'singletap' });
 			var doubleTap = new Hammer.Tap({event: 'doubletap', taps: 2});
@@ -401,7 +402,7 @@ var app= {
 			mc.add([singleTap]);	
 			mc.on('singletap', function(ev) {
 				//ev.preventDefault();
-				alert("YAY CLICKED THE ADD BUTTON");
+				//alert("YAY CLICKED THE ADD BUTTON");
 				//app.modal.document.getElementById("add-person");
 				document.getElementById("add-gift-person").style.display="block";
 				document.querySelector("[data-role=overlay]").style.display="block";
@@ -415,13 +416,13 @@ var app= {
 		
 		var item = ev.target.getAttribute("data-ref");
 		
-		alert("ITEM is " + item);
+		//alert("ITEM is " + item);
 		
 		app.db.transaction(function(trans){
 		trans.executeSql('DELETE FROM people WHERE person_id = ?', [item], 
 			function(tx, rs){
 				//do something if it works, as desired   
-				alert("Deleted Row");
+				//alert("Deleted Row");
 			},
 			function(tx, err){
 				//failed to run query
@@ -457,7 +458,7 @@ var app= {
 				trans.executeSql('INSERT INTO occasions(occ_id, occ_name) VALUES(null, ?)', [name], 
 					function(tx, rs){
 						//do something if it works, as desired   
-						alert("Added row in occ");
+						//alert("Added row in occ");
 						document.getElementById("add-occasion").style.display="none";
 						document.querySelector("[data-role=overlay]").style.display="none";
 						
@@ -489,13 +490,13 @@ var app= {
 	// go back to occasion screen
 		var item = ev.target.getAttribute("data-ref");
 		
-		alert("ITEM is " + item);
+		//alert("ITEM is " + item);
 		
 		app.db.transaction(function(trans){
 			trans.executeSql('DELETE FROM occasions WHERE occ_id = ?', [item], 
 			function(tx, rs){
 				//do something if it works, as desired   
-				alert("Deleted Row");
+				//alert("Deleted Row");
 			},
 			function(tx, err){
 				//failed to run query
@@ -525,7 +526,40 @@ var app= {
 				//something to do in addition to incrementing the value
 				//otherwise your new version will be an empty DB
 						//add stuff into table(s)
+						
+				var selector = document.getElementById("list-per-occ");
+				//var selectedOcc = selector.value;
 				
+				//var options = selector.querySelectorAll("option");
+				
+				app.db.transaction(function(trans){
+        			trans.executeSql("SELECT * FROM occasions", [], 
+                	function(tx, rs){
+                         var len = rs.rows.length;
+							//alert("OPTION STUFF");
+                         for (var i=0; i<len; i++) {
+                         // display one person_name
+							 var option = document.createElement("option");
+							 //option.value = rs.rows.item(i);
+							 option.value = i;
+							 option.textContent = rs.rows.item(i).occ_name;
+							 selector.appendChild(option);
+                         }
+                	},
+                	function(tx, err){
+                    console.log("Error: " + err);
+					norecords = true;
+                	});
+       			});				
+				
+				
+				/*
+				for (var p=0; p<options.length;p++) {
+					if (options[p].selected == true) {
+						selectedOcc = options[p].value;
+					}
+				}
+				*/
 				// there ARE 2 FIELDS HERE!!!!!
 				
 				var name = document.getElementById("new-occ").value
@@ -533,7 +567,7 @@ var app= {
 				trans.executeSql('INSERT INTO occasions(occ_id, occ_name) VALUES(null, ?)', [name], 
 					function(tx, rs){
 						//do something if it works, as desired   
-						alert("Added row in occ");
+						//alert("Added row in occ");
 						document.getElementById("add-occasion").style.display="none";
 						document.querySelector("[data-role=overlay]").style.display="none";
 						//app.fillOccasions();
@@ -553,13 +587,13 @@ var app= {
 		
 		var item = ev.target.getAttribute("data-ref");
 		
-		alert("ITEM is " + item);
+		//alert("ITEM is " + item);
 		
 		app.db.transaction(function(trans){
 		trans.executeSql('DELETE FROM gift WHERE gift_id = ?', [item], 
 			function(tx, rs){
 				//do something if it works, as desired   
-				alert("Deleted Row");
+				//alert("Deleted Row");
 			},
 			function(tx, err){
 				//failed to run query
