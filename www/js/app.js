@@ -30,7 +30,6 @@ var app= {
 	start: function(){
 		app.createdb();
 		app.fillPeople();
-		//app.filloccasions();
 	
 		//connect to database
 		//build the lists for the main pages based on data
@@ -129,6 +128,8 @@ var app= {
 		var div = document.getElementById("peoplelist");
 		var nameul = document.createElement("ul");
 		nameul.setAttribute("data-role","listview");
+		nameul.innerHTML = '';
+		div.appendChild(nameul);
 		var norecords=false;
 
         app.db.transaction(function(trans){
@@ -162,6 +163,8 @@ var app= {
 			hammertime.on('swiperight', function(ev) {
 				ev.preventDefault();
 				console.log(ev);
+				nameul.innerHTML = '';
+				div.appendChild(nameul);				
 				app.fillOccasions(ev);
 			});
 
@@ -209,6 +212,7 @@ var app= {
 		var nameul2 = document.createElement("ul");
 		nameul2.setAttribute("data-role","listview");
 		nameul2.innerHTML = '';
+		div2.appendChild(nameul2);
 		var norecords=false;
         
         app.db.transaction(function(trans){
@@ -243,6 +247,8 @@ var app= {
 			hammertime.on('swipeleft', function(ev) {
 				ev.preventDefault();
 				console.log(ev);
+				nameul2.innerHTML = '';
+				div2.appendChild(nameul2);
 				app.fillPeople(ev);
 			});
 
@@ -279,7 +285,7 @@ var app= {
 		
 		
 	},
-	newperson: function() {
+	newperson: function(ev) {
 	// watch for cancel and save buttons
 	// cancel - go back to people
 	// save - insert record into database then go back to people
@@ -289,6 +295,10 @@ var app= {
 		ev.preventDefault();
 		document.getElementById("add-person").style.display="none";
 		document.querySelector("[data-role=overlay]").style.display="none";
+		
+		//nameul.innerHTML = '';
+		//div2.appendChild(nameul);
+		
 		app.fillPeople();
 		});
 		
@@ -333,13 +343,14 @@ var app= {
 		var nameul3 = document.createElement("ul");
 		nameul3.setAttribute("data-role","listview");
 		nameul3.innerHTML = '';
+		div3.appendChild(nameul3);
 		var norecords=false;
 		
 		var item = ev.target.getAttribute("data-ref");
 		alert("ITEM is " + item);
         
         app.db.transaction(function(trans){
-        trans.executeSql("SELECT p.person_name, o.occ_name, g.gift_idea FROM people AS p INNER JOIN occasions AS o ON o.occ_id = g.occ_id INNER JOIN gifts AS g ON p.person_id = g.person_id WHERE p.person_id = ?", [item],
+        trans.executeSql("SELECT g.purchased, g.gift_id, g.gift_idea, o.occ_name FROM gifts AS g INNER JOIN occasions AS o ON o.occ_id = g.occ_id WHERE g.person_id = ? ORDER BY o.occ_name, g.gift_idea", [item],
                 function(tx, rs){
                          var len = rs.rows.length;
 
@@ -355,6 +366,7 @@ var app= {
                     console.log("Error: " + err);
 					norecords = true;
                 });
+				
        });
 		if (norecords) {
 			alert ("no records");
@@ -362,7 +374,7 @@ var app= {
 			div3.appendChild(nameul3);	
 		}
 
-			var mchammertime = new Hammer.Manager(nameul2);
+			var mchammertime = new Hammer.Manager(nameul3);
 			
 			var singleTap = new Hammer.Tap({ event: 'singletap' });
 			var doubleTap = new Hammer.Tap({event: 'doubletap', taps: 2});
@@ -372,13 +384,15 @@ var app= {
 			mchammertime.on('singletap', function(ev) {
 				ev.preventDefault();
 				console.log(ev);
+				nameul3.innerHTML = '';
+				div3.appendChild(nameul3);
 				//app.giftsforoccasion(ev);
 				// turn colour on.
 			});
 			mchammertime.on('doubletap', function(ev) {
 				ev.preventDefault();
 				console.log(ev);
-				//app.deleteoccasion(ev);
+				app.deletepersongift(ev);
 				// delete entry
 			});
 			
@@ -415,6 +429,10 @@ var app= {
 				alert( err.message);
 			});
         }); 
+		
+			//			nameul2.innerHTML = '';
+			//	div2.appendChild(nameul2);
+		
 		app.fillPeople();
 	},
 	newOccasion: function() {
@@ -425,7 +443,7 @@ var app= {
 		ev.preventDefault();
 		document.getElementById("add-occasion").style.display="none";
 		document.querySelector("[data-role=overlay]").style.display="none";
-		app.fillPeople();
+		app.fillOccasions();
 		});
 		
 		document.getElementById("SaveO").addEventListener("click",function(ev) {
@@ -443,7 +461,11 @@ var app= {
 						alert("Added row in occ");
 						document.getElementById("add-occasion").style.display="none";
 						document.querySelector("[data-role=overlay]").style.display="none";
-						//app.fillOccasions();
+						
+						//				nameul2.innerHTML = '';
+				//div2.appendChild(nameul2);
+						
+						app.fillOccasions();
 					},
 					function(tx, err){
 						//failed to run query
@@ -481,6 +503,10 @@ var app= {
 				alert( err.message);
 			});
         }); 
+		
+						//nameul2.innerHTML = '';
+				//div2.appendChild(nameul2);
+		
 		app.fillOccasions();
 		
 	},
@@ -490,7 +516,7 @@ var app= {
 		ev.preventDefault();
 		document.getElementById("add-gift-person").style.display="none";
 		document.querySelector("[data-role=overlay]").style.display="none";
-		app.fillPeople();
+		app.giftsforperson();
 		});
 		
 		document.getElementById("SaveGP").addEventListener("click",function(ev) {
@@ -500,7 +526,40 @@ var app= {
 				//something to do in addition to incrementing the value
 				//otherwise your new version will be an empty DB
 						//add stuff into table(s)
+						
+				var selector = document.getElementById("list-per-occ");
+				//var selectedOcc = selector.value;
 				
+				//var options = selector.querySelectorAll("option");
+				
+				app.db.transaction(function(trans){
+        			trans.executeSql("SELECT * FROM occasions", [], 
+                	function(tx, rs){
+                         var len = rs.rows.length;
+							alert("OPTION STUFF");
+                         for (var i=0; i<len; i++) {
+                         // display one person_name
+							 var option = document.createElement("option");
+							 //option.value = rs.rows.item(i);
+							 option.value = i;
+							 option.textContent = rs.rows.item(i).occ_name;
+							 selector.appendChild(option);
+                         }
+                	},
+                	function(tx, err){
+                    console.log("Error: " + err);
+					norecords = true;
+                	});
+       			});				
+				
+				
+				/*
+				for (var p=0; p<options.length;p++) {
+					if (options[p].selected == true) {
+						selectedOcc = options[p].value;
+					}
+				}
+				*/
 				// there ARE 2 FIELDS HERE!!!!!
 				
 				var name = document.getElementById("new-occ").value
@@ -521,6 +580,31 @@ var app= {
 			});
 			
 		});
+	},
+	deletepersongift: function(ev) {
+	// delete record from database
+	// go back to person screen
+		
+		var item = ev.target.getAttribute("data-ref");
+		
+		alert("ITEM is " + item);
+		
+		app.db.transaction(function(trans){
+		trans.executeSql('DELETE FROM gift WHERE gift_id = ?', [item], 
+			function(tx, rs){
+				//do something if it works, as desired   
+				alert("Deleted Row");
+			},
+			function(tx, err){
+				//failed to run query
+				alert( err.message);
+			});
+        }); 
+		
+		//				nameul2.innerHTML = '';
+				// div2.appendChild(nameul2);
+		
+		app.giftsforperson();
 	}
 }
 	

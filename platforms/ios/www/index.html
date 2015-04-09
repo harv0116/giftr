@@ -36,11 +36,8 @@
 			<p class="details">
 			Here are all the gifts ideas for <span>PERSON</span> for all occasions.
 			</p>
-			<ul data-role="listview" id="giftpeople">
-				<!-- 
-				list of items to be dynamically added 
-				single-tap gift idea to toggle purchased state for gift
- 				double-tap gift idea to remove from list
+			<div id="giftpeoplelist"></div>
+            <!--<ul data-role="listview" id="giftpeople"></ul>
 				-->
 			</ul>
 		</section>
@@ -104,8 +101,8 @@
 				<input type="text" id="new-idea-person" value="" placeholder="" class=""/>
 			</div>
 			<div class="formBox">
-				<input type="button" class="btnCancel" value="CANCEL" />
-				<input type="button" class="btnSave" value="SAVE" />
+				<input type="button" id="CancelGP" class="btnCancel" value="CANCEL" />
+				<input type="button" id="SaveGP" class="btnSave" value="SAVE" />
 			</div>
 		</form>	
 	</div>

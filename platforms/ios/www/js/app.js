@@ -30,7 +30,6 @@ var app= {
 	start: function(){
 		app.createdb();
 		app.fillPeople();
-		//app.filloccasions();
 	
 		//connect to database
 		//build the lists for the main pages based on data
@@ -119,194 +118,307 @@ var app= {
 	},
 	
 	fillPeople: function(){
-        alert("GOT HERE");
+        
 		document.getElementById("people-list").style.display="block";
         document.getElementById("occasion-list").style.display="none";
         document.getElementById("gifts-for-person").style.display="none";
         document.getElementById("gifts-for-occasion").style.display="none";
-		alert("GOT HERE 2");
-        
+		
+        var peoplePage = document.getElementById("people-list");
 		var div = document.getElementById("peoplelist");
 		var nameul = document.createElement("ul");
 		nameul.setAttribute("data-role","listview");
-		
+		nameul.innerHTML = '';
+		div.appendChild(nameul);
+		var norecords=false;
+
         app.db.transaction(function(trans){
-        trans.executeSql("SELECT person_name FROM people", [],
+        trans.executeSql("SELECT * FROM people", [],
                 function(tx, rs){
                          var len = rs.rows.length;
 
                          for (var i=0; i<len; i++) {
                          // display one person_name
 							 var li = document.createElement("li");
-							 li.dataset.ref = i;
+							 li.dataset.ref = rs.rows.item(i).person_id;
 							 li.innerHTML = rs.rows.item(i).person_name;
 							 nameul.appendChild(li);
                          }
                 },
                 function(tx, err){
                     console.log("Error: " + err);
+					norecords = true;
                 });
         });
-			
-		div.appendChild(nameul);		
+		if (norecords) {
+			alert ("no records");
+		} else {
+		div.appendChild(nameul);	
+		}
 		
-			var hammertime = new Hammer.Manager(nameul);	
+			var hammertime = new Hammer.Manager(peoplePage);	
 			var swipeRight = new Hammer.Swipe({event: 'swiperight' });
-			var singleTap = new Hammer.Tap({ event: 'singletap' });
-			var doubleTap = new Hammer.Tap({event: 'doubletap', taps: 2});
-			hammertime.add([doubleTap, singleTap, swipeRight]);
-			doubleTap.requireFailure('singletap');
+			hammertime.add([swipeRight]);
 
 			hammertime.on('swiperight', function(ev) {
 				ev.preventDefault();
 				console.log(ev);
-				app.filloccasions(ev);
+				nameul.innerHTML = '';
+				div.appendChild(nameul);				
+				app.fillOccasions(ev);
 			});
 
-			hammertime.on('singletap', function(ev) {
+			var mchammertime = new Hammer.Manager(nameul);
+			
+			var singleTap = new Hammer.Tap({ event: 'singletap' });
+			var doubleTap = new Hammer.Tap({event: 'doubletap', taps: 2});
+			mchammertime.add([doubleTap, singleTap]);
+			doubleTap.requireFailure('singletap');
+				
+			mchammertime.on('singletap', function(ev) {
 				ev.preventDefault();
 				console.log(ev);
 				app.giftsforperson(ev);
 			});
-			hammertime.on('doubletap', function(ev) {
+			mchammertime.on('doubletap', function(ev) {
 				ev.preventDefault();
 				console.log(ev);
 				app.deleteperson(ev);
 			});
-			document.getElementById("btnAdd").addEventListener("click",function(ev) {
-				ev.preventDefault();
-				app.modal.document.getElementById("add-person");
-				app.overlay.style.display = "block";
-				app.modal.style.display = "block";
+			
+			var addbutton = document.getElementById("btnAdd1");
+			var mc = new Hammer.Manager(addbutton);
+			var singleTap = new Hammer.Tap({ event: 'singletap' });
+			mc.add([singleTap]);	
+			mc.on('singletap', function(ev) {
+				//ev.preventDefault();
+				alert("YAY CLICKED THE ADD BUTTON");
+				document.querySelector("[data-role=overlay]").style.display="block";
+				document.getElementById("add-person").style.display="block";
 				app.newperson();
 			});
 			
 			
 	},
-	filloccasions: function(){
-        alert("GOT HERE - holy smokes");
+	fillOccasions: function(){
 		
 		document.getElementById("people-list").style.display="none";
         document.getElementById("occasion-list").style.display="block";
         document.getElementById("gifts-for-person").style.display="none";
         document.getElementById("gifts-for-occasion").style.display="none";
         
+		var occPage = document.getElementById("occasion-list");
 		var div2 = document.getElementById("occasionlist");
 		var nameul2 = document.createElement("ul");
 		nameul2.setAttribute("data-role","listview");
+		nameul2.innerHTML = '';
+		div2.appendChild(nameul2);
+		var norecords=false;
         
         app.db.transaction(function(trans){
-        trans.executeSql("SELECT occ_name FROM occasions", [],
+        trans.executeSql("SELECT * FROM occasions", [],
                 function(tx, rs){
                          var len = rs.rows.length;
 
                          for (var i=0; i<len; i++) {
                          // display one person_name
 							 var li = document.createElement("li");
-							 li.dataset.ref = i;
+							 li.dataset.ref = rs.rows.item(i).occ_id;
 							 li.innerHTML = rs.rows.item(i).occ_name;
 							 nameul2.appendChild(li);
                          }
                 },
                 function(tx, err){
                     console.log("Error: " + err);
+					norecords = true;
                 });
-        });
+       });
+		if (norecords) {
+			alert ("no records");
+		} else {
+			div2.appendChild(nameul2);	
+		}
+	
 		
-		var hammertime = new Hammer.Manager(nameul2);	
-		var swipeLeft = new Hammer.Swipe({event: 'swipeleft' });
-		var singleTap = new Hammer.Tap({ event: 'singletap' });
-		var doubleTap = new Hammer.Tap({event: 'doubletap', taps: 2});
-		hammertime.add([doubleTap, singleTap, swipeLeft]);
-		doubleTap.requireFailure('singletap');
+		    var hammertime = new Hammer.Manager(occPage);	
+			var swipeLeft = new Hammer.Swipe({event: 'swipeleft' });
+			hammertime.add([swipeLeft]);
 
-		hammertime.on('swipeleft', function(ev) {
-			ev.preventDefault();
-			console.log(ev);
-			app.fillpeople(ev);
-		});
+			hammertime.on('swipeleft', function(ev) {
+				ev.preventDefault();
+				console.log(ev);
+				nameul2.innerHTML = '';
+				div2.appendChild(nameul2);
+				app.fillPeople(ev);
+			});
 
-		hammertime.on('singletap', function(ev) {
-			ev.preventDefault();
-			console.log(ev);
-			app.giftsforoccasion(ev);
-		});
-		hammertime.on('doubletap', function(ev) {
-			ev.preventDefault();
-			console.log(ev);
-			app.deleteoccasion(ev);
-		});
+			var mchammertime = new Hammer.Manager(nameul2);
+			
+			var singleTap = new Hammer.Tap({ event: 'singletap' });
+			var doubleTap = new Hammer.Tap({event: 'doubletap', taps: 2});
+			mchammertime.add([doubleTap, singleTap]);
+			doubleTap.requireFailure('singletap');
+				
+			mchammertime.on('singletap', function(ev) {
+				ev.preventDefault();
+				console.log(ev);
+				app.giftsforoccasion(ev);
+			});
+			mchammertime.on('doubletap', function(ev) {
+				ev.preventDefault();
+				console.log(ev);
+				app.deleteoccasion(ev);
+			});
+			
+			var addbutton = document.getElementById("btnAdd2");
+			var mc = new Hammer.Manager(addbutton);
+			var singleTap = new Hammer.Tap({ event: 'singletap' });
+			mc.add([singleTap]);	
+			mc.on('singletap', function(ev) {
+				//ev.preventDefault();
+				alert("YAY CLICKED THE ADD BUTTON");
+				//app.modal.document.getElementById("add-person");
+				document.getElementById("add-occasion").style.display="block";
+				document.querySelector("[data-role=overlay]").style.display="block";
+				app.newOccasion();
+			});
 		
-		document.getElementById("btnAdd2").addEventListener("click",function(ev) {
-		ev.preventDefault();
-		app.modal.document.getElementById("add-occasion");
-		app.overlay.style.display = "block";
-		app.modal.style.display = "block";
-		app.newoccasion();
-		});
+		
 	},
-	newperson: function() {
+	newperson: function(ev) {
 	// watch for cancel and save buttons
 	// cancel - go back to people
 	// save - insert record into database then go back to people
+		//alert("STOPPED AT NEW PERSON");
+		
 		document.getElementById("CancelP").addEventListener("click",function(ev) {
 		ev.preventDefault();
-		app.overlay.style.display = "none";
-		app.modal.style.display = "none";
-		app.fillpeople();
+		document.getElementById("add-person").style.display="none";
+		document.querySelector("[data-role=overlay]").style.display="none";
+		
+		//nameul.innerHTML = '';
+		//div2.appendChild(nameul);
+		
+		app.fillPeople();
 		});
 		
 		document.getElementById("SaveP").addEventListener("click",function(ev) {
-			app.db.changeVersion(app.version, '2.0',
-			function(trans){
+			
+			app.db.transaction(function(trans){
+			
 				//something to do in addition to incrementing the value
 				//otherwise your new version will be an empty DB
-				alert("DB version incremented");
 						//add stuff into table(s)
 				var name = document.getElementById("new-per").value
 								
-				trans.executeSql('INSERT INTO people(person_name) VALUES(?)', name, 
+				trans.executeSql('INSERT INTO people(person_id, person_name) VALUES(null, ?)', [name], 
 					function(tx, rs){
 						//do something if it works, as desired   
 						alert("Added row in people");
+						document.getElementById("add-person").style.display="none";
+						document.querySelector("[data-role=overlay]").style.display="none";
+						app.fillPeople();
 					},
 					function(tx, err){
 						//failed to run query
 						alert( err.message);
 					});
 		
-			});	
-		},
-		function(err){
-			//error in changing version
-			//if the increment fails
-			alert( "Change version call error " + err.message);
-		},
-		function(){
-			//successfully completed the transaction of incrementing the version number   
-					app.version = '2.0';
-					alert("Change version function worked.");
+			});
+			
 		});
-		app.overlay.style.display = "none";
-		app.modal.style.display = "none";
-		app.fillpeople();
-	
 	},
-	giftsforperson: function() {
+	giftsforperson: function(ev) {
 	// select statement based on gifts per person
 	// display LIs
 	// set up single double and add button
 	// set up back button
+		document.getElementById("people-list").style.display="none";
+        document.getElementById("occasion-list").style.display="none";
+        document.getElementById("gifts-for-person").style.display="block";
+        document.getElementById("gifts-for-occasion").style.display="none";
+        
+		var gfpPage = document.getElementById("gifts-for-person");
+		var div3 = document.getElementById("giftpeoplelist");
+		var nameul3 = document.createElement("ul");
+		nameul3.setAttribute("data-role","listview");
+		nameul3.innerHTML = '';
+		div3.appendChild(nameul3);
+		var norecords=false;
+		
+		var item = ev.target.getAttribute("data-ref");
+		alert("ITEM is " + item);
+        
+        app.db.transaction(function(trans){
+        trans.executeSql("SELECT g.purchased, g.gift_id, g.gift_idea, o.occ_name FROM gifts AS g INNER JOIN occasions AS o ON o.occ_id = g.occ_id WHERE g.person_id = ? ORDER BY o.occ_name, g.gift_idea)", [item],
+                function(tx, rs){
+                         var len = rs.rows.length;
+
+                         for (var i=0; i<len; i++) {
+                         // display one person_name
+							 var li = document.createElement("li");
+							 li.dataset.ref = rs.rows.item(i).person_id;
+							 li.innerHTML = rs.rows.item(i).gift_idea + " - " + rs.rows.item(i).occ_name;
+							 nameul3.appendChild(li);
+                         }
+                },
+                function(tx, err){
+                    console.log("Error: " + err);
+					norecords = true;
+                });
+       });
+		if (norecords) {
+			alert ("no records");
+		} else {
+			div3.appendChild(nameul3);	
+		}
+
+			var mchammertime = new Hammer.Manager(nameul2);
+			
+			var singleTap = new Hammer.Tap({ event: 'singletap' });
+			var doubleTap = new Hammer.Tap({event: 'doubletap', taps: 2});
+			mchammertime.add([doubleTap, singleTap]);
+			doubleTap.requireFailure('singletap');
+				
+			mchammertime.on('singletap', function(ev) {
+				ev.preventDefault();
+				console.log(ev);
+				nameul3.innerHTML = '';
+				div3.appendChild(nameul3);
+				//app.giftsforoccasion(ev);
+				// turn colour on.
+			});
+			mchammertime.on('doubletap', function(ev) {
+				ev.preventDefault();
+				console.log(ev);
+				app.deletepersongift(ev);
+				// delete entry
+			});
+			
+			var addbutton = document.getElementById("btnAdd3");
+			var mc = new Hammer.Manager(addbutton);
+			var singleTap = new Hammer.Tap({ event: 'singletap' });
+			mc.add([singleTap]);	
+			mc.on('singletap', function(ev) {
+				//ev.preventDefault();
+				alert("YAY CLICKED THE ADD BUTTON");
+				//app.modal.document.getElementById("add-person");
+				document.getElementById("add-gift-person").style.display="block";
+				document.querySelector("[data-role=overlay]").style.display="block";
+				app.newGiftForPerson();
+			});
 	
 	},
-	deleteperson: function() {
+	deleteperson: function(ev) {
 	// delete record from database
 	// go back to person screen
 		
-		idToDelete = '';  // I do not know how to do this!!!!!!  The number has to come from the person list
+		var item = ev.target.getAttribute("data-ref");
+		
+		alert("ITEM is " + item);
 		
 		app.db.transaction(function(trans){
-		trans.executeSql('DELETE FROM person WHERE person_id = ?', idToDelete, 
+		trans.executeSql('DELETE FROM people WHERE person_id = ?', [item], 
 			function(tx, rs){
 				//do something if it works, as desired   
 				alert("Deleted Row");
@@ -316,32 +428,43 @@ var app= {
 				alert( err.message);
 			});
         }); 
+		
+			//			nameul2.innerHTML = '';
+			//	div2.appendChild(nameul2);
+		
 		app.fillPeople();
 	},
-	newoccasion: function() {
+	newOccasion: function() {
 	// watch for cancel and save buttons
 	// cancel - go back to occasion
 	// save - insert record into database then go back to occ
 		document.getElementById("CancelO").addEventListener("click",function(ev) {
 		ev.preventDefault();
-		app.overlay.style.display = "none";
-		app.modal.style.display = "none";
-		app.filloccasion();
+		document.getElementById("add-occasion").style.display="none";
+		document.querySelector("[data-role=overlay]").style.display="none";
+		app.fillOccasions();
 		});
 		
 		document.getElementById("SaveO").addEventListener("click",function(ev) {
-			app.db.changeVersion(app.version, '3.0',
-			function(trans){
+			
+			app.db.transaction(function(trans){
+			
 				//something to do in addition to incrementing the value
 				//otherwise your new version will be an empty DB
-				alert("DB version incremented");
 						//add stuff into table(s)
-				var occname = document.getElementById("new-occ").value
+				var name = document.getElementById("new-occ").value
 								
-				trans.executeSql('INSERT INTO occasion(occ_name) VALUES(?)', occname, 
+				trans.executeSql('INSERT INTO occasions(occ_id, occ_name) VALUES(null, ?)', [name], 
 					function(tx, rs){
 						//do something if it works, as desired   
-						alert("Added row in occasion");
+						alert("Added row in occ");
+						document.getElementById("add-occasion").style.display="none";
+						document.querySelector("[data-role=overlay]").style.display="none";
+						
+						//				nameul2.innerHTML = '';
+				//div2.appendChild(nameul2);
+						
+						app.fillOccasions();
 					},
 					function(tx, err){
 						//failed to run query
@@ -349,20 +472,9 @@ var app= {
 					});
 		
 			});
-		},
-		function(err){
-			//error in changing version
-			//if the increment fails
-			alert( "Change version call error " + err.message);
-		},
-		function(){
-			//successfully completed the transaction of incrementing the version number   
-					app.version = '3.0';
-					alert("Change version function worked.");
+			
 		});
-		app.overlay.style.display = "none";
-		app.modal.style.display = "none";
-		app.filloccasion();
+		
 			
 	},
 	giftsforoccasion: function() {
@@ -371,13 +483,16 @@ var app= {
 	// set up single double and add button
 	// set up back button
 	},
-	deleteoccasion: function() {
+	
+	deleteoccasion: function(ev) {
 	// delete record from database
 	// go back to occasion screen
-		idToDelete = '';  // I do not know how to do this!!!!!!  The number has to come from the person list
+		var item = ev.target.getAttribute("data-ref");
+		
+		alert("ITEM is " + item);
 		
 		app.db.transaction(function(trans){
-		trans.executeSql('DELETE FROM occasions WHERE occ_id = ?', idToDelete, 
+			trans.executeSql('DELETE FROM occasions WHERE occ_id = ?', [item], 
 			function(tx, rs){
 				//do something if it works, as desired   
 				alert("Deleted Row");
@@ -387,7 +502,76 @@ var app= {
 				alert( err.message);
 			});
         }); 
+		
+						//nameul2.innerHTML = '';
+				//div2.appendChild(nameul2);
+		
 		app.fillOccasions();
+		
 	},
+	newGiftForPerson: function(ev) {
+		
+		document.getElementById("CancelGP").addEventListener("click",function(ev) {
+		ev.preventDefault();
+		document.getElementById("add-gift-person").style.display="none";
+		document.querySelector("[data-role=overlay]").style.display="none";
+		app.giftsforperson();
+		});
+		
+		document.getElementById("SaveGP").addEventListener("click",function(ev) {
+			
+			app.db.transaction(function(trans){
+			
+				//something to do in addition to incrementing the value
+				//otherwise your new version will be an empty DB
+						//add stuff into table(s)
+				
+				// there ARE 2 FIELDS HERE!!!!!
+				
+				var name = document.getElementById("new-occ").value
+								
+				trans.executeSql('INSERT INTO occasions(occ_id, occ_name) VALUES(null, ?)', [name], 
+					function(tx, rs){
+						//do something if it works, as desired   
+						alert("Added row in occ");
+						document.getElementById("add-occasion").style.display="none";
+						document.querySelector("[data-role=overlay]").style.display="none";
+						//app.fillOccasions();
+					},
+					function(tx, err){
+						//failed to run query
+						alert( err.message);
+					});
+		
+			});
+			
+		});
+	},
+	deletepersongift: function(ev) {
+	// delete record from database
+	// go back to person screen
+		
+		var item = ev.target.getAttribute("data-ref");
+		
+		alert("ITEM is " + item);
+		
+		app.db.transaction(function(trans){
+		trans.executeSql('DELETE FROM gift WHERE gift_id = ?', [item], 
+			function(tx, rs){
+				//do something if it works, as desired   
+				alert("Deleted Row");
+			},
+			function(tx, err){
+				//failed to run query
+				alert( err.message);
+			});
+        }); 
+		
+		//				nameul2.innerHTML = '';
+				// div2.appendChild(nameul2);
+		
+		app.giftsforperson();
+	}
 }
+	
 app.initialize();
